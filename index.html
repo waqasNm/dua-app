@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="lib/boot.css">-->
+     <style>
+        body{
+            background-color: #444444;
+        }
+        .main{
+            background-color: #FCFCFC;
+            width: 300px;
+            margin: 100px auto;
+            border-radius: 5px;
+            padding: 20px;
+            
+        }
+        .input{
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAEyktRqGlGvmHR0GSwv0W2QrN3aBfAZ0o",
+    authDomain: "fir-demo-af58b.firebaseapp.com",
+    databaseURL: "https://fir-demo-af58b.firebaseio.com",
+    projectId: "fir-demo-af58b",
+    storageBucket: "fir-demo-af58b.appspot.com",
+    messagingSenderId: "563076360656"
+  };
+  firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+    <!--<div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">First Name</span>
+                    <input type="text" id="firstName" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Last Name</span>
+                    <input type="text" id="lastName" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">abc@Example.com</span>
+                    <input type="text" id="email" class="form-control" placeholder="User Email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">password</span>
+                    <input type="password" id="pass" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <button class="btn btn-success" onclick="submit()">SUBMIT</button>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="form-group main">
+        <h2 style="text-align: center;" class="text-primary">SignUp Form</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text"  class="form-control input" name="" id="fname" placeholder="First Name" value="">            
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control input" name="" id="lname" placeholder="Last Name" value="">            
+            </div>
+        </div>
+            <input type="text" class="form-control input" name="" id="email" placeholder="email@gmail.com" value="">            
+            <input type="password" class="form-control input"  name="" id="pswd" placeholder="Password" value="">            
+            <button class="btn btn-success btn-block" onclick="submit()" >SignUp</button>           
+            <p>already have an account <a href="../login/login.html" class="text-info"> Login</a></p>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/popper.js"></script>
+    <script src="lib/boot.js"></script>
+</body>
+<script src="signup.js"></script>
+
+</html>
+
+
+   
+
+
+    
+
+
+
