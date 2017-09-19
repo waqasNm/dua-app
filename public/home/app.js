@@ -26,7 +26,9 @@ function praySubmit() {
 function logOut() {
     firebase.auth().signOut().then(function () {
         // Sign-out successful.
-        Location = '../login/login.html';
+        window.location = '../login/login.html';
+        localStorage.clear();
+        console.log("LoggedOut ")
     }).catch(function (error) {
         // An error happened.
         console.log(error)
